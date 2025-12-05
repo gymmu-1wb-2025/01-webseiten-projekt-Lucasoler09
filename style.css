@@ -3,3 +3,9 @@
   justify-content: space-between;
   max-width: 300px;
 }
+
+.table-entry-2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+}
