@@ -7,33 +7,29 @@
     <title>Eigene Webseite</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="./main.js" defer>
+    </script>
   </head>
 
-  <script src="./main.js" defer>
-  </script>
-
-  <aside>
-    <nav>
-      <ul>
-        <li>
-          <a href="./unterseiten/hobbies.html">Hobbies</a>
-        </li>
-        <li>
-          <a href="./unterseiten/Familie.html">Familie</a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
-  //
-
-  <body>
-    <header>
+  <body class="grid-wrapper">
+    <header style="grid-area: header">
       <h1>Webseite von Luca</h1>
     </header>
+    <aside style="grid-area: aside">
+      <nav>
+        <ul>
+          <li>
+            <a href="./unterseiten/hobbies.html">Hobbies</a>
+          </li>
+          <li>
+            <a href="./unterseiten/Familie.html">Familie</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-    <button onclick="createNewElement()">Neues Element</button>
-
-    <main>
+    <main style="grid-area: main">
       <section>
         <h2>Steckbrief</h2>
         <ul>
@@ -62,6 +58,6 @@
       </section>
     </main>
 
-    <footer>Meine Webseite</footer>
+    <footer style="grid-area: footer">Webseite von Luca </footer>
   </body>
 </html>
