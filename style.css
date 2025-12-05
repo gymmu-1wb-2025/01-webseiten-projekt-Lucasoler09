@@ -1,0 +1,29 @@
+.table-entry {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+body {
+  background-color: #8f8f8f; /* Hintergrundfarbe */
+  color: #000000; /* Schriftfarbe */
+}
+
+.grid-wrapper {
+  display: grid;
+  height: 82vh;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
+/* Zentrierung für Header & Footer */
+header,
+footer {
+  display: flex;
+  align-items: center; /* vertikal in die Mitte */
+  justify-content: center; /* horizontal in die Mitte */
+  text-align: center;
+}

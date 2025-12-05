@@ -7,17 +7,54 @@
     <title>Eigene Webseite</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="./main.js" defer>
+    </script>
   </head>
 
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
+  <body class="grid-wrapper">
+    <header style="grid-area: header">
+      <h1>Webseite von Luca</h1>
     </header>
+    <aside style="grid-area: aside">
+      <nav>
+        <ul>
+          <li>
+            <a href="./unterseiten/hobbies.html">Hobbies</a>
+          </li>
+          <li>
+            <a href="./unterseiten/Familie.html">Familie</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-    <main>
+    <main style="grid-area: main">
       <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
+        <h2>Steckbrief</h2>
+        <ul>
+          <li class="table-entry">
+            <span>Name:</span><span>Luca Mattia Solèr</span>
+          </li>
+          <li class="table-entry">
+            <span>Geburtstag:</span><span>20.06.09</span>
+          </li>
+          <li class="table-entry">
+            <span>Wohnort:</span><span>Muttenz</span>
+          </li>
+          <li class="table-entry">
+            <span>Geschwisterte:</span><span>Einen Bruder</span>
+          </li>
+          <li class="table-entry">
+            <span>Schule:</span>
+            <span
+              ><a href="https://www.gym-muttenz.ch/">Gym Muttenz</a></span
+            >
+          </li>
+          <li class="table-entry">
+            <span>Hobbys:</span><span>Unihockey</span>
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -36,6 +73,6 @@
       </section>
     </main>
 
-    <footer>Meine Webseite</footer>
+    <footer style="grid-area: footer">Webseite von Luca </footer>
   </body>
 </html>
