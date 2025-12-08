@@ -26,11 +26,11 @@ footer {
   align-items: center; /* vertikal in die Mitte */
   justify-content: center; /* horizontal in die Mitte */
   text-align: center;
-  background-color: #00000050;
+  background-color: #00000030;
 }
 
 aside {
-  background-color: #00000050; /* Hintergrundfarbe, transparent falls hintergrund mal mit bild gewächselt wird. 50% transparent  */
+  background-color: #00000030; /* Hintergrundfarbe, transparent falls hintergrund mal mit bild gewächselt wird. 30% transparent  */
 }
 
 main {
