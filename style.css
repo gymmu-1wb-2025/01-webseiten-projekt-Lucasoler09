@@ -27,3 +27,19 @@ footer {
   justify-content: center; /* horizontal in die Mitte */
   text-align: center;
 }
+
+aside > nav > ul {
+  list-style: none; /* keinen punkt */
+  margin: 0;
+}
+
+aside > nav > ul > li {
+  margin: 0;
+}
+
+aside > nav > ul > li > a {
+  text-decoration: none; /* kein unterstrich */
+  color: black; /* link farbe */
+  display: block; /* gesamter bereich klickbar */
+  padding: 10px; /* abstand teil zwischen teil  */
+}
