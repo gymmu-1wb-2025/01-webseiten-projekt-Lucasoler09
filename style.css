@@ -26,8 +26,16 @@ footer {
   align-items: center; /* vertikal in die Mitte */
   justify-content: center; /* horizontal in die Mitte */
   text-align: center;
+  background-color: #00000050;
 }
 
+aside {
+  background-color: #00000050; /* Hintergrundfarbe, transparent falls hintergrund mal mit bild gewächselt wird. 50% transparent  */
+}
+
+main {
+  padding: 50px; /* Abstand zum Rand */
+}
 aside > nav > ul {
   list-style: none; /* keinen punkt */
   margin: 0;
@@ -42,4 +50,9 @@ aside > nav > ul > li > a {
   color: black; /* link farbe */
   display: block; /* gesamter bereich klickbar */
   padding: 10px; /* abstand teil zwischen teil  */
+}
+
+main > section > ul > li > span > a {
+  text-decoration: none; /* kein unterstrich */
+  color: black; /* link farbe */
 }
