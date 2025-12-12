@@ -56,3 +56,7 @@ main > section > ul > li > span > a {
   text-decoration: none; /* kein unterstrich */
   color: black; /* link farbe */
 }
+
+img {
+  border-radius: 10px; /* Abgerundete Ecken für Bilder*/
+}
