@@ -3,6 +3,7 @@
   justify-content: space-between;
   max-width: 300px;
 }
+/* Damit der abstand bei Tabelen immer gleich ist */
 
 body {
   background-color: #cbcbcb; /* Hintergrundfarbe */
@@ -59,4 +60,8 @@ main > section > ul > li > span > a {
 
 img {
   border-radius: 10px; /* Abgerundete Ecken für Bilder*/
+}
+
+section {
+  margin-bottom: 75px; /* Abstand nach unten zwischen Abshnitten  */
 }
