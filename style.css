@@ -73,7 +73,7 @@ aside > nav > ul > section > li > a {
   padding: 10px; /* abstand teil zwischen teil  */
 }
 
-main > section > ul > section > li > a {
+main > section > ul > li > span > a {
   text-decoration: none; /* kein unterstrich */
   color: black; /* link farbe */
 }
