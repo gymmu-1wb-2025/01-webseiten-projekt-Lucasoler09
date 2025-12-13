@@ -27,11 +27,11 @@ footer {
   align-items: center; /* vertikal in die Mitte */
   justify-content: center; /* horizontal in die Mitte */
   text-align: center;
-  background-color: #00000030;
+  background-color: #a0a0a0;
 }
 
 aside {
-  background-color: #00000030; /* Hintergrundfarbe, transparent falls hintergrund mal mit bild gewächselt wird. 30% transparent  */
+  background-color: #a0a0a0;
 }
 
 main {
@@ -64,4 +64,28 @@ img {
 
 section {
   margin-bottom: 75px; /* Abstand nach unten zwischen Abshnitten  */
+}
+
+/* test für das aussehen des Icons: https://codeshack.io/svg-viewer/ */
+
+.icon-Home {
+  fill: #ff0000; /* Farbe des Hauses */
+  width: 25px;
+  height: 5px; /* Grösse des Hauses */
+}
+
+.icon-Hobbies {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-Familie {
+  fill: #000000;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-Schule {
+  width: 30px;
+  height: 30px;
 }
