@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../style.css">
 
     <main style="grid-area: main">
-      <section>
+      <section id="Mitglieder">
         <h2>Familien Mitglieder</h2>
         <p>
           Ich besitze neben meiner direkten Familie noch einen Onkel und eine
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="Herkunft">
         <h2>Herkunft meiner Familie</h2>
         <p>Das sind die Orte wo meine Familienmitglieder aufgewachsen sind</p>
         <ul>
@@ -77,7 +77,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="Kantone">
         <h2>Kantone meiner Familie</h2>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Canton_of_Basel.svg"
@@ -110,16 +110,83 @@
     <aside>
       <nav>
         <ul>
-          <li>
-            <a href="./index.html">Home </a>
-          </li>
+          <section>
+            <li>
+              <a href="./index.html"
+                ><svg class="icon-Home" viewBox="0 0 25 25">
+                  <!-- Grösse des icons -->
+                  <rect x="6" y="15" width="12" height="10"/>
+                  <polygon points="12,9 4,15 20,15"/>
+                </svg>
+                Home
+              </a>
+            </li>
 
-          <li>
-            <a href="hobbies.html">Hobbies</a>
-          </li>
-          <li>
-            <a href="Schule.html">Schule</a>
-          </li>
+            <li>
+              <a href="hobbies.html"
+                ><svg class="icon-Hobbies" viewBox="0 0 25 25">
+                  <!-- Ball -->
+                  <circle cx="12.5" cy="15" r="10" fill="#ffffff"/>
+
+                  <!-- Löcher Ball -->
+                  <circle cx="4.5" cy="15" r="1" fill="#a0a0a0"/>
+                  <circle cx="12.5" cy="15" r="1" fill="#a0a0a0"/>
+                  <circle cx="20.5" cy="15" r="1" fill="#a0a0a0"/>
+
+                  <circle cx="16.5" cy="20" r="1" fill="#a0a0a0"/>
+                  <circle cx="8.5" cy="20" r="1" fill="#a0a0a0"/>
+
+                  <circle cx="16.5" cy="10" r="1" fill="#a0a0a0"/>
+                  <circle cx="8.5" cy="10" r="1" fill="#a0a0a0"/>
+                </svg>
+                Hobbies</a
+              >
+            </li>
+            <li>
+              <a href="Schule.html"
+                ><svg class="icon-Schule" viewBox="0 0 25 25">
+                  <!-- Bücher -->
+                  <rect
+                    x="5"
+                    y="19.5"
+                    width="15"
+                    height="5"
+                    fill="#ffffff"
+                    stroke="#000"
+                    stroke-width="1"
+                  />
+                  <rect
+                    x="6"
+                    y="14"
+                    width="15"
+                    height="5"
+                    fill="#ffffff"
+                    stroke="#000"
+                    stroke-width="1"
+                  />
+                  <rect
+                    x="4.5"
+                    y="8.5"
+                    width="15"
+                    height="5"
+                    fill="#ffffff"
+                    stroke="#000"
+                    stroke-width="1"
+                  />
+                </svg>
+                Schule</a
+              >
+            </li>
+          </section>
+          <section>
+            <h4>Abschnitte</h4>
+            <li>
+              <a href="#Mitglieder">Mitglieder</a>
+            </li>
+            <li>
+              <a href="#Herkunft">Herkunft</a>
+            </li>
+          </section>
         </ul>
       </nav>
     </aside>

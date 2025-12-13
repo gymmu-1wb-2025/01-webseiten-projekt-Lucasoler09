@@ -8,6 +8,8 @@
 body {
   background-color: #cbcbcb; /* Hintergrundfarbe */
   color: #000000; /* Schriftfarbe */
+  margin: 0;
+  padding: 0;
 }
 
 .grid-wrapper {
@@ -21,39 +23,57 @@ body {
     "footer footer";
 }
 /* Zentrierung für Header & Footer */
-header,
+
 footer {
   display: flex;
   align-items: center; /* vertikal in die Mitte */
   justify-content: center; /* horizontal in die Mitte */
   text-align: center;
-  background-color: #a0a0a0;
+  background-color: #610d0d;
 }
 
 aside {
   background-color: #a0a0a0;
+  position: fixed; /* schaut das nav nicht auf der seite verschiebt */
+  height: 100%; /* höhe */
+  width: 20%; /* breite */
+  padding-top: 100px; /* abstand oben */
+  z-index: 1; /* nur einen Prioritätspunkt deshalb ganz unten  */
+}
+
+header {
+  display: flex;
+  align-items: center; /* vertikal in die Mitte */
+  justify-content: center; /* horizontal in die Mitte */
+  text-align: center;
+  background-color: #610d0d;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 10; /* mehr priorität als header deshalb darüber */
 }
 
 main {
   padding: 50px; /* Abstand zum Rand */
+  padding-top: 100px; /* abstand oben */
 }
 aside > nav > ul {
   list-style: none; /* keinen punkt */
   margin: 0;
 }
 
-aside > nav > ul > li {
+aside > nav > ul > section > li {
   margin: 0;
 }
 
-aside > nav > ul > li > a {
+aside > nav > ul > section > li > a {
   text-decoration: none; /* kein unterstrich */
   color: black; /* link farbe */
   display: block; /* gesamter bereich klickbar */
   padding: 10px; /* abstand teil zwischen teil  */
 }
 
-main > section > ul > li > span > a {
+main > section > ul > section > li > a {
   text-decoration: none; /* kein unterstrich */
   color: black; /* link farbe */
 }
@@ -69,18 +89,22 @@ section {
 /* test für das aussehen des Icons: https://codeshack.io/svg-viewer/ */
 
 .icon-Home {
-  fill: #ff0000; /* Farbe des Hauses */
-  width: 25px;
-  height: 5px; /* Grösse des Hauses */
+  stroke: black;
+  stroke-width: 1;
+  fill: #ffffff; /* Farbe des Hauses */
+  width: 30px;
+  height: 30px; /* Grösse des Hauses */
 }
 
 .icon-Hobbies {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .icon-Familie {
-  fill: #000000;
+  stroke: black;
+  stroke-width: 1;
+  fill: #ffffff;
   width: 30px;
   height: 30px;
 }
