@@ -40,6 +40,7 @@ aside {
   width: 20%; /* breite */
   padding-top: 100px; /* abstand oben */
   z-index: 1; /* nur einen Prioritätspunkt deshalb ganz unten  */
+  transition: background-color 0.3s; /* Animation wenn die Farbe geändert wird */
 }
 
 header {
