@@ -123,3 +123,12 @@ h2 {
   width: 30px;
   height: 30px;
 }
+
+img {
+  transition: transform 0.3s; /*  Animation beim Hover also von
+  1 -> 1.1 in 0.3 sek wenn das nicht drin ist gibt es keine animation sondern erscheint beim hovern einfach grösser */
+}
+
+img:hover {
+  transform: scale(1.1); /* vergrößert das Bild um 10% */
+}
