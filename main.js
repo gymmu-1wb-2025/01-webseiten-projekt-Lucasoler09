@@ -1,3 +1,5 @@
+// Nav-Color auswahl
+
 //const navColorPicker, bedeutet das der code dahinter einfach als navColorPicker gespeichert wird und später verwendet werden kann
 // document.getElementById("nav-color"), bedeutet dass das element mit der ID "nav-color" gesucht wird  wird, also de farb selector
 const navColorPicker = document.getElementById("nav-color");
@@ -12,4 +14,22 @@ navColorPicker.addEventListener("input", (e) => {
   //style.backgroundColor wählt im css die hintergrund farbe aus damit sie geändert werden kann
   // = e.target.value, dieser teil macht die ausgewählte Farbe zur hintergrundfarbe des asides
   document.querySelector("aside").style.backgroundColor = e.target.value;
+});
+
+// Header-Color auswahl
+const headerColorPicker = document.getElementById("header-color");
+headerColorPicker.addEventListener("input", (e) => {
+  document.querySelector("header").style.backgroundColor = e.target.value;
+});
+
+// Footer-Color auswahl
+const footerColorPicker = document.getElementById("footer-color");
+footerColorPicker.addEventListener("input", (e) => {
+  document.querySelector("footer").style.backgroundColor = e.target.value;
+});
+
+// Ende Main-Color auswahl
+const mainColorPicker = document.getElementById("main-color");
+mainColorPicker.addEventListener("input", (e) => {
+  document.querySelector("main").style.backgroundColor = e.target.value;
 });
