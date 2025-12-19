@@ -133,3 +133,26 @@ img {
 img:hover {
   transform: scale(1.1); /* vergrößert das Bild um 10% */
 }
+
+/*Mobile variante */
+/* Hilfe: https://www.geeksforgeeks.org/css/what-is-a-breakpoint-in-responsive-web-design/?utm_source=chatgpt.com#what-is-a-breakpoint */
+
+@media (max-width: 768px) {
+  /* @media= aktiv wenn der bildschirm kleiner 768 px ist grösse kleines tablet*/
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* eine Spalte */
+    grid-template-areas:
+      "header"
+      "aside" /* nva nicht mehr auf der seite sondern über den anderen und wird auch verschoben nimmt so nicht immmer plaz ein */
+      "main"
+      "footer";
+  }
+
+  aside {
+    position: static; /* nicht mehr fix also wie ein abschnitt */
+    width: 100%; /* damit die ganze breite und nicht nur am rand */
+    height: 700px; /* höhe */
+    padding-top: 80px; /* abstand oben */
+  }
+}
