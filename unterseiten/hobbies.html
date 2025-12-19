@@ -4,21 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+
+    <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
-    <header>
-      <h1>Meine Hobbies</h1>
+  <body class="grid-wrapper">
+    <header style="grid-area: header">
+      <h1>Meine Hobbys</h1>
     </header>
 
-    <main>
-      <section>
+    <main style="grid-area: main">
+      <section id="Sport"><!-- id damit in nav dahin gesprungen werden kann-->
         <h2>Sport</h2>
         <p>Diese Sportarten mache ich gerne</p>
         <ul>
-          <li>Volleyball</li>
-          <li>Trailrunning</li>
+          <li>Unihockey</li>
+          <li>Tischtennis</li>
+          <li>Schach</li>
+          <li>Fussball</li>
+          <li>Schwimmen</li>
+        </ul>
+      </section>
+      <section id="Kariere">
+        <h2>Kariere</h2>
+        <p>Dies sind wichtige Punkte in meiner Sportlichen Kariere </p>
+        <ul>
+          <li class="table-entry">
+            <span>Beginn Fechten:</span>
+            <span>2016</span>
+          </li>
+          <li class="table-entry">
+            <span>Unihockey bei Muttenz:</span>
+            <span>2020</span>
+          </li>
+          <li class="table-entry">
+            <span>Ende Fechten:</span>
+            <span>2020</span>
+          </li>
+          <li class="table-entry">
+            <span>Wechsel zu Basel Regio U14/17</span>
+            <span>2021</span>
+          </li>
+          <li class="table-entry">
+            <span>Wechsel in die U16:</span>
+            <span>2022</span>
+          </li>
+          <li class="table-entry">
+            <span>Wechsel zu Reinach:</span>
+            <span>2023</span>
+          </li>
+          <li class="table-entry">
+            <span>Regionaler Meister:</span>
+            <span>2024</span>
+          </li>
+          <li class="table-entry">
+            <span>2. Platz Schweizermeisterschaft:</span>
+            <span>2024</span>
+          </li>
+          <li class="table-entry">
+            <span>Regionaler Meister:</span>
+            <span>2025</span>
+          </li>
+          <li class="table-entry">
+            <span>1. Platz Schweizermeisterschaft:</span>
+            <span>2025</span>
+          </li>
+        </ul>
+      </section>
+      <section id="Bilder">
+        <h2>Bilder</h2>
+        <p>Hier sind einige Bilder von meinen Hobbies</p>
+        <img
+          src="https://live.staticflickr.com/65535/53667437350_41a0cf4450_b.jpg"
+          alt="Halbfinale 2024"
+          width="266"
+          height="200"
+        ><!-- Ein bild
+        src = link zur bildquelle
+        alt= text der angezeigt wird wenn das bild nicht geladen wird
+        width= breite
+        height= höhe -->
+        <img
+          src="https://i.ibb.co/ZryyGJr/Image-10.jpg"
+          alt="Ski fahren"
+          width="150"
+          height="200"
+        >
+        <img
+          src="https://i.ibb.co/Fk4ZQfLF/Image-11.jpg"
+          alt="Meisterschaft 24/25"
+          width="266"
+          height="200"
+        >
+        <img
+          src="https://i.ibb.co/prLF50Zw/Image-13.jpg"
+          alt="Fechten"
+          width="150"
+          height="200"
+        >
+      </section>
+      <section id="Musik">
+        <h2>Musik</h2>
+        <p>
+          Musik spielt einen grosse Rolle in meinem Alltag, da ich fast jede
+          freie Minute mit ihr verbringe.
+        </p>
+        <h2>Meine Lieblings-Genres</h2>
+        <ul>
+          <li>Hip-Hop</li>
+          <li>Deutsch-Rap</li>
+          <li>Urbano-Latino</li>
+          <li>Pop</li>
+        </ul>
+      </section>
+      <section id="Gaming">
+        <h2>Gaming</h2>
+        <p>
+          In meiner Freizeit spiele ich auch gerne Videospiele mit Freunden.
+        </p>
+        <h2>Meine Lieblings-Spiele</h2>
+        <ul>
+          <li>FIFA</li>
+          <li>Mario Kart</li>
+          <li>Mario Party</li>
+          <li>Minecraft</li>
         </ul>
       </section>
     </main>
+    <footer style="grid-area: footer">Webseite von Luca </footer>
+
+    <aside>
+      <nav>
+        <ul>
+          <section>
+            <h4>Navigation</h4>
+            <li>
+              <a
+                href="http://localhost:5173/01-webseiten-projekt-Lucasoler09/index.html"
+              >
+                <!-- Icon Home -->
+                <svg class="icon-Home" viewBox="0 0 25 25">
+                  <!-- Grösse des icons -->
+                  <rect x="6" y="15" width="12" height="10"/>
+                  <polygon points="12,9 4,15 20,15"/><!--Polygon erste zahl x, zweite zahl y kordinate der ecke, die ecken werden verbunden und der inhalt gefüllt -->
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="Familie.html"
+                ><svg class="icon-Familie" viewBox="0 0 25 25">
+                  <!--Körper-->
+                  <rect x="4.5" y="15" width="5" height="10"/>
+                  <rect x="12.5" y="20" width="3" height="5"/>
+                  <rect x="18.5" y="15" width="5" height="10"/>
+
+                  <!--Kopf-->
+                  <circle cx="7" cy="12.5" r="2.5"/>
+                  <circle cx="14" cy="18.5" r="1.5"/>
+                  <circle cx="21" cy="12.5" r="2.5"/>
+                </svg>
+                Familie</a
+              >
+            </li>
+            <li>
+              <a href="Schule.html">
+                <svg class="icon-Schule" viewBox="0 0 25 25">
+                  <!-- Bücher -->
+                  <rect
+                    x="5"
+                    y="19.5"
+                    width="15"
+                    height="5"
+                    fill="#ffffff"
+                    stroke="#000"
+                    stroke-width="1"
+                  />
+                  <rect
+                    x="6"
+                    y="14"
+                    width="15"
+                    height="5"
+                    fill="#ffffff"
+                    stroke="#000"
+                    stroke-width="1"
+                  />
+                  <rect
+                    x="4.5"
+                    y="8.5"
+                    width="15"
+                    height="5"
+                    fill="#ffffff"
+                    stroke="#000"
+                    stroke-width="1"
+                  />
+                </svg>
+                Schule</a
+              >
+            </li>
+          </section>
+          <section>
+            <h4>Abschnitte</h4>
+            <li>
+              <a href="#Sport"
+                >Sport</a
+              ><!--verlinkung zu einem abschnitt in der seite wird durch die id definiert-->
+            </li>
+            <li>
+              <a href="#Kariere">Kariere</a>
+            </li>
+            <li>
+              <a href="#Bilder">Bilder</a>
+            </li>
+            <li>
+              <a href="#Musik">Musik</a>
+            </li>
+            <li>
+              <a href="#Gaming">Gaming</a>
+            </li>
+          </section>
+        </ul>
+      </nav>
+    </aside>
   </body>
 </html>

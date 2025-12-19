@@ -1,0 +1,158 @@
+.table-entry {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+/* Damit der abstand bei Tabelen immer gleich ist */
+
+body {
+  background-color: #cbcbcb; /* Hintergrundfarbe */
+  color: #000000; /* Schriftfarbe */
+  margin: 0;
+  padding: 0;
+}
+
+.grid-wrapper {
+  display: grid;
+  height: 82vh;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
+/* Zentrierung für Header & Footer */
+
+footer {
+  display: flex;
+  align-items: center; /* vertikal in die Mitte */
+  justify-content: center; /* horizontal in die Mitte */
+  text-align: center;
+  background-color: #610d0d;
+  color: #ffffff;
+}
+
+aside {
+  background-color: #a0a0a0;
+  position: fixed; /* schaut das nav nicht auf der seite verschiebt */
+  height: 100%; /* höhe */
+  width: 20%; /* breite */
+  padding-top: 100px; /* abstand oben */
+  z-index: 1; /* nur einen Prioritätspunkt deshalb ganz unten  */
+  transition: background-color 0.3s; /* Animation wenn die Farbe geändert wird */
+}
+
+header {
+  display: flex;
+  align-items: center; /* vertikal in die Mitte */
+  justify-content: center; /* horizontal in die Mitte */
+  text-align: center;
+  background-color: #610d0d;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 10; /* mehr priorität als header deshalb darüber */
+  color: #ffffff;
+}
+
+main {
+  padding: 50px; /* Abstand zum Rand */
+  padding-top: 100px; /* abstand oben */
+}
+aside > nav > ul {
+  list-style: none; /* keinen punkt */
+  margin: 0;
+}
+
+aside > nav > ul > section > li {
+  margin: 0;
+}
+
+aside > nav > ul > section > li > a {
+  text-decoration: none; /* kein unterstrich */
+  color: black; /* link farbe */
+  display: block; /* gesamter bereich klickbar */
+  padding: 10px; /* abstand teil zwischen teil  */
+}
+
+main > section > ul > li > span > a {
+  text-decoration: none; /* kein unterstrich */
+  color: black; /* link farbe */
+}
+
+img {
+  border-radius: 10px; /* Abgerundete Ecken für Bilder*/
+}
+
+section {
+  margin-bottom: 75px; /* Abstand nach unten zwischen Abshnitten  */
+  scroll-margin-top: 100px; /* damit der titel nicht darüber springt wenn in der nav leiste angeklickt
+  funktioniert da es um 100px nach unten geschoben wird anstat direkt ganz oben aufzutauchen*/
+}
+h2 {
+  scroll-margin-top: 100px; /* mit h2 auch da bei schule die stuffen nicht in extra sektions unterteilt sind*/
+}
+
+/* test für das aussehen des Icons: https://codeshack.io/svg-viewer/ */
+
+.icon-Home {
+  stroke: black;
+  stroke-width: 1;
+  fill: #ffffff; /* Farbe des Hauses */
+  width: 30px;
+  height: 30px; /* Grösse des Hauses */
+}
+
+.icon-Hobbies {
+  width: 30px;
+  height: 30px;
+  stroke: black;
+  stroke-width: 1;
+  fill: #ffffff;
+}
+
+.icon-Familie {
+  stroke: black;
+  stroke-width: 1;
+  fill: #ffffff;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-Schule {
+  width: 30px;
+  height: 30px;
+}
+
+img {
+  transition: transform 0.3s; /*  Animation beim Hover also von
+  1 -> 1.1 in 0.3 sek wenn das nicht drin ist gibt es keine animation sondern erscheint beim hovern einfach grösser */
+}
+
+img:hover {
+  transform: scale(1.1); /* vergrößert das Bild um 10% */
+}
+
+/*Mobile variante */
+/* Hilfe: https://www.geeksforgeeks.org/css/what-is-a-breakpoint-in-responsive-web-design/?utm_source=chatgpt.com#what-is-a-breakpoint */
+
+@media (max-width: 768px) {
+  /* @media= aktiv wenn der bildschirm kleiner 768 px ist grösse kleines tablet*/
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* eine Spalte */
+    grid-template-areas:
+      "header"
+      "aside" /* nva nicht mehr auf der seite sondern über den anderen und wird auch verschoben nimmt so nicht immmer plaz ein */
+      "main"
+      "footer";
+  }
+
+  aside {
+    position: static; /* nicht mehr fix also wie ein abschnitt */
+    width: 100%; /* damit die ganze breite und nicht nur am rand */
+    height: auto; /* höhe passt sich an den inhalt an */
+    padding-top: 80px; /* abstand oben */
+  }
+}
