@@ -6,26 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eigene Webseite</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><!--verlinkung zum css also das die css codes in der seite auch funktionieren -->
 
     <script src="./main.js" defer>
     </script>
   </head>
 
-  <body class="grid-wrapper">
-    <header style="grid-area: header">
-      <h1>Webseite von Luca</h1>
+  <body class="grid-wrapper"><!-- macht das die seite nach dem body element aufgebaut wird-->
+    <header style="grid-area: header"><!-- grid-area definiert den bereich im layout-->
+      <h1>Webseite von Luca</h1><!-- Titel-->
     </header>
     <aside style="grid-area: aside">
       <nav>
         <ul>
-          <section>
-            <h4>Navigation</h4>
+          <section><!-- section da jede section einen abstand von 75 px hat -->
+            <h4>Navigation</h4><!--Untertitel-->
             <li>
-              <a href="./unterseiten/hobbies.html"
-                ><svg class="icon-Hobbies" viewBox="0 0 25 25">
+              <a href="./unterseiten/hobbies.html"><!-- link zur unterseite -->
+                <!--Das Icon-->
+                <svg class="icon-Hobbies" viewBox="0 0 25 25">
+                  <!--viewbox hilfe: https://developer.mozilla.org/de/docs/Web/SVG/Reference/Attribute/viewBox
+                  25 für die Breite und höhe -->
+                  <!--class: damit das icon im svg angepasst werden kann-->
+
                   <!-- Ball -->
                   <circle cx="12.5" cy="15" r="10" fill="#ffffff"/>
+                  <!-- circle= kreis
+                   cx= x kordinate des mittelpunkts
+                   cy= y kordinate des mittelpunkts
+                   r= radius
+                   fill = farbe aber eh nicht nötig da es in css angepasst wird  -->
 
                   <!-- Löcher Ball -->
                   <circle cx="4.5" cy="15" r="1" fill="#a0a0a0"/>
@@ -71,6 +81,13 @@
                     stroke="#000"
                     stroke-width="1"
                   />
+                  <!--rect= Rechteck
+                  x = x kordinate
+                  y = y kordinate
+                  width = breite
+                  height = höhe
+                  stroke = umrandungs farbe
+                  width= breite der umrandung -->
                   <rect
                     x="6"
                     y="14"
@@ -102,9 +119,9 @@
       <section>
         <h2>Einleitung</h2>
         <p>
-          Dies ist meine Website hier erfahren sie viele wichtige Dinge über
+          Dies ist meine Website, hier erfahren sie viele wichtige Dinge über
           mich, wie meine Hobbys, meine Familie und meine Schulzeit.
-        </p>
+        </p><!--Abschnitt-->
       </section>
       <section>
         <h2>Steckbrief</h2>
@@ -112,7 +129,7 @@
           Hier sind die wichtigsten Informationen über mich in einem Überblick
         </p>
         <ul>
-          <li class="table-entry">
+          <li class="table-entry"><!-- sorgt dafür das die spans immer einen gleichen abstand haben-->
             <span>Name:</span><span>Luca Mattia </span>
           </li>
           <li class="table-entry">
@@ -122,7 +139,7 @@
             <span>Wohnort:</span><span>Muttenz</span>
           </li>
           <li class="table-entry">
-            <span>Geschwisterte:</span><span>Einen Bruder</span>
+            <span>Geschwister:</span><span>Einen Bruder</span>
           </li>
           <li class="table-entry">
             <span>Schule:</span>
@@ -140,8 +157,9 @@
         <p>
           <!-- Farbselector für die header -->
           <label for="header-color">Header-Farbe auswählen:</label>
-
+          <!--angezeigter text auf der website vor dem selector -->
           <input type="color" id="header-color" value="#610d0d">
+          <!-- input type="color": Farbselector, id = header-color damit in java script darauf zurückgegrifen werden kann, value=... ist die startfarbe -->
         </p>
         <p>
           <!-- Beschriftung für den Farb-Selector -->
@@ -168,6 +186,8 @@
       </section>
     </main>
 
-    <footer style="grid-area: footer">Webseite von Luca</footer>
+    <footer style="grid-area: footer">
+      Webseite von Luca
+    </footer><!-- Die Fusszeile-->
   </body>
 </html>

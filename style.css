@@ -152,7 +152,7 @@ img:hover {
   aside {
     position: static; /* nicht mehr fix also wie ein abschnitt */
     width: 100%; /* damit die ganze breite und nicht nur am rand */
-    height: 700px; /* höhe */
+    height: auto; /* höhe passt sich an den inhalt an */
     padding-top: 80px; /* abstand oben */
   }
 }

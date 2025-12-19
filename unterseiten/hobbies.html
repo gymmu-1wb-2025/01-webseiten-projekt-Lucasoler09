@@ -13,7 +13,7 @@
     </header>
 
     <main style="grid-area: main">
-      <section id="Sport">
+      <section id="Sport"><!-- id damit in nav dahin gesprungen werden kann-->
         <h2>Sport</h2>
         <p>Diese Sportarten mache ich gerne</p>
         <ul>
@@ -78,7 +78,11 @@
           alt="Halbfinale 2024"
           width="266"
           height="200"
-        >
+        ><!-- Ein bild
+        src = link zur bildquelle
+        alt= text der angezeigt wird wenn das bild nicht geladen wird
+        width= breite
+        height= höhe -->
         <img
           src="https://i.ibb.co/ZryyGJr/Image-10.jpg"
           alt="Ski fahren"
@@ -101,7 +105,7 @@
       <section id="Musik">
         <h2>Musik</h2>
         <p>
-          Musik spielt einen grosse Rolle in meinem Altag, da ich fast jede
+          Musik spielt einen grosse Rolle in meinem Alltag, da ich fast jede
           freie Minute mit ihr verbringe.
         </p>
         <h2>Meine Lieblings-Genres</h2>
@@ -128,10 +132,6 @@
     </main>
     <footer style="grid-area: footer">Webseite von Luca </footer>
 
-    <!-- class="table-entry"
- verweisd darauf das es nach diesem prinzip in css gemacht werden soll,
- also immer den selben abstand   -->
-
     <aside>
       <nav>
         <ul>
@@ -145,7 +145,7 @@
                 <svg class="icon-Home" viewBox="0 0 25 25">
                   <!-- Grösse des icons -->
                   <rect x="6" y="15" width="12" height="10"/>
-                  <polygon points="12,9 4,15 20,15"/>
+                  <polygon points="12,9 4,15 20,15"/><!--Polygon erste zahl x, zweite zahl y kordinate der ecke, die ecken werden verbunden und der inhalt gefüllt -->
                 </svg>
                 Home
               </a>
@@ -205,7 +205,9 @@
           <section>
             <h4>Abschnitte</h4>
             <li>
-              <a href="#Sport">Sport</a>
+              <a href="#Sport"
+                >Sport</a
+              ><!--verlinkung zu einem abschnitt in der seite wird durch die id definiert-->
             </li>
             <li>
               <a href="#Kariere">Kariere</a>
